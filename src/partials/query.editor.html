@@ -1,0 +1,22 @@
+<query-editor-row query-ctrl="ctrl" class="generic-datasource-query-row" has-text-edit-mode="true">
+  <div class="gf-form-inline">
+
+    <div class="gf-form" ng-if="ctrl.target.rawQuery">
+      <textarea class="gf-form-input" rows="5" ng-model="ctrl.target.target" spellcheck="false" ng-blur="ctrl.onChangeInternal()" />
+    </div>
+
+    <div ng-if="!ctrl.target.rawQuery">
+      <div class="gf-form">
+        <metric-segment-model property="ctrl.target.api" get-options="ctrl.getOptions()" on-change="ctrl.onChangeInternal()"
+          css-class="tight-form-item-xxlarge"></metric-segment-model>
+        <metric-segment-model property="ctrl.target.code" get-options="ctrl.getCodeOptions()" on-change="ctrl.onChangeInternal()"
+          css-class="tight-form-item-xxlarge"></metric-segment-model>
+        <metric-segment-model property="ctrl.target.field" get-options="ctrl.getFieldOptions()" on-change="ctrl.onChangeInternal()"
+          css-class="tight-form-item-xxlarge"></metric-segment-model>
+        <div class="help-tip gf-form-label">
+          <p>格式为: [API名称][股票代码][字段]. 目前支持的api包括: daily</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</query-editor-row>

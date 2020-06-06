@@ -1,0 +1,27 @@
+{
+  "type": "datasource",
+  "name": "Tushare.pro",
+  "id": "tomjamescn-tushare.pro-datasource",
+
+  "metrics": true,
+  "annotations": false,
+
+  "info": {
+    "description": "Tushare.pro data for grafana",
+    "author": {
+      "name": "tomjamescn",
+      "url": "http://github.com/tomjamescn"
+    },
+    "links": [
+      {"name": "GitHub", "url": "https://github.com/tomjamescn/grafana-tushare.pro"}
+    ],
+    "keywords": ["tushare.pro", "stocks", "grafana"],
+    "version": "1.0.0",
+    "updated": "2017-05-05"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "3.x.x",
+    "plugins": [ ]
+  }
+}
