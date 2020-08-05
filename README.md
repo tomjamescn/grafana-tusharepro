@@ -1,7 +1,6 @@
 ## Grafana Tushare.pro Datasource
 > 将tushare.pro的api作为数据源引入grafana，目前支持日线数据。框架搭好了，今后容易增加更多接口。
 
-> 为了节省自己的时间，快速开发，借鉴了[grafana-finance](https://github.com/ayoungprogrammer/grafana-finance)的很多代码
 
 ### 依赖
 grafana >= 3.0.0即可，也支持最新的grafana 7.x
